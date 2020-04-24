@@ -1,12 +1,13 @@
 import React from 'react';
 import { Platform } from 'react-native';
-import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { bgBlue, white } from '../utils/colors';
 import { robotoRegular } from '../utils/fonts';
 
-import Decks from '../views/Decks';
-import AddDeck from '../views/AddDeck';
+import Decks from '../screens/Decks';
+import AddDeck from '../screens/AddDeck';
 
 const TabNavigator = createBottomTabNavigator(
   {

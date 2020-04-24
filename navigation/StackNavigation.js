@@ -1,12 +1,13 @@
 import React from 'react';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import {  createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack'
 
 import TabNavigation from './TabNavigation';
-import Decks from '../views/Decks';
-import Deck from '../views/Deck';
-import AddDeck from '../views/AddDeck';
-import AddCard from '../views/AddCard';
-import Quiz from '../views/Quiz';
+import Decks from '../screens/Decks';
+import Deck from '../screens/Deck';
+import AddDeck from '../screens/AddDeck';
+import AddCard from '../screens/AddCard';
+import Quiz from '../screens/Quiz';
 
 const StackNavigator = createStackNavigator({
   Primary: {
@@ -17,12 +18,6 @@ const StackNavigator = createStackNavigator({
   },
   Decks: {
     screen: Decks
-    // navigationOptions: {
-    //   headerTintColor: white,
-    //   headerStyle: {
-    //     backgroundColor: purple
-    //   }
-    // }
   },
   Deck: {
     screen: Deck
