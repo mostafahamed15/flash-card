@@ -1,4 +1,3 @@
-import 'react-native-gesture-handler';
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { createStore } from 'redux';
@@ -11,7 +10,7 @@ import { robotoMedium, robotoRegular } from './utils/fonts';
 import NavigationService from './navigation/navigationService';
 import { fetchAllDecks } from './utils/api';
 import { setLocalNotification } from './utils/notificationHelper';
-import { NavigationContainer } from '@react-navigation/native';
+
 
 import StackNavigation from './navigation/StackNavigation';
 
@@ -51,7 +50,6 @@ export default class App extends Component {
 
     return (
       <Provider store={this.store}>
-        <NavigationContainer>
         <View style={styles.appContainer}>
 
           {this.state.prerequisitesLoaded && (
@@ -61,7 +59,6 @@ export default class App extends Component {
           )}
 
         </View>
-        </NavigationContainer>
       </Provider>
     );
   }

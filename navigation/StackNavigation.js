@@ -1,6 +1,6 @@
 import React from 'react';
-import {  createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack'
+import {  createAppContainer, createStackNavigator } from 'react-navigation';
+//import { createStackNavigator } from 'react-navigation-stack'
 
 import TabNavigation from './TabNavigation';
 import Decks from '../screens/Decks';

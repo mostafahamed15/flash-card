@@ -1,4 +1,4 @@
-import { NavigationActions } from '@react-navigation/compat';
+import { NavigationActions } from 'react-navigation';
 
 let _navigator;
 
